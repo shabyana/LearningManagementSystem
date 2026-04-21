@@ -23,6 +23,7 @@ namespace ForDebug
             dataContext.Users.Add(new UserDto() { Role = "Студент", FullName = "Волков Владимир Игоревич" });
             dataContext.Users.Add(new UserDto() { Role = "Студент", FullName = "Зайцева Наталья Сергеевна" });
 
+<<<<<<< HEAD
             dataContext.Courses.Add(new CourseDto() { Title = "Unity", AuthorID = 2 });
             dataContext.Courses.Add(new CourseDto() { Title = "PostgreSQL", AuthorID = 2 });
             dataContext.Courses.Add(new CourseDto() { Title = "HTML", AuthorID = 3 });
@@ -33,6 +34,22 @@ namespace ForDebug
 
            
 
+=======
+            dataContext.Courses.Add(new CourseDto() { Title = "Unity", AuthorID = "2" });
+            dataContext.Courses.Add(new CourseDto() { Title = "PostgreSQL", AuthorID = "2" });
+            dataContext.Courses.Add(new CourseDto() { Title = "HTML", AuthorID = "3" });
+            dataContext.Courses.Add(new CourseDto() { Title = "C#", AuthorID = "3" });
+            dataContext.Courses.Add(new CourseDto() { Title = "ADO.NET", AuthorID = "2" });
+
+            dataContext.SaveChanges();
+
+            //DataContext dataContext = new DataContext();
+
+            //var i = dataContext.Courses
+            //    .Include(g => g.Users).ThenInclude(s => s.Solutions).ThenInclude(s => s.State)
+            //    .Include(g => g.Students).ThenInclude(s => s.Solutions).ThenInclude(s => s.Task)
+            //    .ToList();
+>>>>>>> origin/main
         }
     }
 }

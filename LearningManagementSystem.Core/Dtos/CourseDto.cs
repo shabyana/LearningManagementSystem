@@ -11,7 +11,11 @@ namespace LearningManagementSystem.Core.Dtos
         public int Id { get; set; }
         public string Title { get; set; }
         public string? Description { get; set; }
+<<<<<<< HEAD
         public int AuthorID { get; set; }
+=======
+        public string AuthorID { get; set; }
+>>>>>>> origin/main
 
         public List<UserDto> Users  { get; set; } = new List<UserDto>();
         public List<TestDto> Tests { get; set; } = new List<TestDto>();
